@@ -15,6 +15,9 @@
 		7EDAEBE01C605B6F00CC0E02 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDAEBDE1C605B6F00CC0E02 /* LaunchScreen.storyboard */; };
 		7EDAEBEB1C605B6F00CC0E02 /* EasyShareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEBEA1C605B6F00CC0E02 /* EasyShareTests.m */; };
 		7EDAEBF61C605B6F00CC0E02 /* EasyShareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEBF51C605B6F00CC0E02 /* EasyShareUITests.m */; };
+		7EDAEC051C60815100CC0E02 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDAEC041C60815100CC0E02 /* TencentOpenAPI.framework */; };
+		7EDAEC0C1C6086D500CC0E02 /* ShareCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEC0B1C6086D500CC0E02 /* ShareCenter.m */; };
+		AF15647A8A85069D93EA20F9 /* libPods-EasyShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3DAC79C7C5D25E5A625795 /* libPods-EasyShare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15DE8B05E9807AE4C5F90A08 /* Pods-EasyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.debug.xcconfig"; sourceTree = "<group>"; };
+		4A3DAC79C7C5D25E5A625795 /* libPods-EasyShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FB2070802754E98E5DF5DF /* Pods-EasyShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.release.xcconfig"; sourceTree = "<group>"; };
 		7EDAEBCD1C605B6F00CC0E02 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDAEBD11C605B6F00CC0E02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EDAEBD31C605B6F00CC0E02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +57,9 @@
 		7EDAEBF11C605B6F00CC0E02 /* EasyShareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyShareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDAEBF51C605B6F00CC0E02 /* EasyShareUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EasyShareUITests.m; sourceTree = "<group>"; };
 		7EDAEBF71C605B6F00CC0E02 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EDAEC041C60815100CC0E02 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		7EDAEC0A1C6086D500CC0E02 /* ShareCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareCenter.h; sourceTree = "<group>"; };
+		7EDAEC0B1C6086D500CC0E02 /* ShareCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF15647A8A85069D93EA20F9 /* libPods-EasyShare.a in Frameworks */,
+				7EDAEC051C60815100CC0E02 /* TencentOpenAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15A8E31461A3600F38A968C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15DE8B05E9807AE4C5F90A08 /* Pods-EasyShare.debug.xcconfig */,
+				58FB2070802754E98E5DF5DF /* Pods-EasyShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7EDAEBC41C605B6F00CC0E02 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +105,8 @@
 				7EDAEBE91C605B6F00CC0E02 /* EasyShareTests */,
 				7EDAEBF41C605B6F00CC0E02 /* EasyShareUITests */,
 				7EDAEBCE1C605B6F00CC0E02 /* Products */,
+				15A8E31461A3600F38A968C5 /* Pods */,
+				A14D4356D6A995FAEF46000B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +127,8 @@
 				7EDAEBD41C605B6F00CC0E02 /* AppDelegate.m */,
 				7EDAEBD61C605B6F00CC0E02 /* ViewController.h */,
 				7EDAEBD71C605B6F00CC0E02 /* ViewController.m */,
+				7EDAEC061C60822400CC0E02 /* Share */,
+				7EDAEC031C60815100CC0E02 /* Framework */,
 				7EDAEBD91C605B6F00CC0E02 /* Main.storyboard */,
 				7EDAEBDC1C605B6F00CC0E02 /* Assets.xcassets */,
 				7EDAEBDE1C605B6F00CC0E02 /* LaunchScreen.storyboard */,
@@ -140,6 +164,31 @@
 			path = EasyShareUITests;
 			sourceTree = "<group>";
 		};
+		7EDAEC031C60815100CC0E02 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				7EDAEC041C60815100CC0E02 /* TencentOpenAPI.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		7EDAEC061C60822400CC0E02 /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				7EDAEC0A1C6086D500CC0E02 /* ShareCenter.h */,
+				7EDAEC0B1C6086D500CC0E02 /* ShareCenter.m */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		A14D4356D6A995FAEF46000B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A3DAC79C7C5D25E5A625795 /* libPods-EasyShare.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EDAEBFA1C605B6F00CC0E02 /* Build configuration list for PBXNativeTarget "EasyShare" */;
 			buildPhases = (
+				C6A388D306086A873A0EA96D /* Check Pods Manifest.lock */,
 				7EDAEBC91C605B6F00CC0E02 /* Sources */,
 				7EDAEBCA1C605B6F00CC0E02 /* Frameworks */,
 				7EDAEBCB1C605B6F00CC0E02 /* Resources */,
+				98778A3568064A9EF55317F1 /* Embed Pods Frameworks */,
+				F4430DBCF40894446B053052 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,11 +317,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		98778A3568064A9EF55317F1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6A388D306086A873A0EA96D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F4430DBCF40894446B053052 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7EDAEBC91C605B6F00CC0E02 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDAEC0C1C6086D500CC0E02 /* ShareCenter.m in Sources */,
 				7EDAEBD81C605B6F00CC0E02 /* ViewController.m in Sources */,
 				7EDAEBD51C605B6F00CC0E02 /* AppDelegate.m in Sources */,
 				7EDAEBD21C605B6F00CC0E02 /* main.m in Sources */,
@@ -409,9 +510,15 @@
 		};
 		7EDAEBFB1C605B6F00CC0E02 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15DE8B05E9807AE4C5F90A08 /* Pods-EasyShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EasyShare/Framework",
+				);
 				INFOPLIST_FILE = EasyShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ileo.EasyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +527,15 @@
 		};
 		7EDAEBFC1C605B6F00CC0E02 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58FB2070802754E98E5DF5DF /* Pods-EasyShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EasyShare/Framework",
+				);
 				INFOPLIST_FILE = EasyShare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ileo.EasyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +609,7 @@
 				7EDAEBFC1C605B6F00CC0E02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EDAEBFD1C605B6F00CC0E02 /* Build configuration list for PBXNativeTarget "EasyShareTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +618,7 @@
 				7EDAEBFF1C605B6F00CC0E02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7EDAEC001C605B6F00CC0E02 /* Build configuration list for PBXNativeTarget "EasyShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +627,7 @@
 				7EDAEC021C605B6F00CC0E02 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
