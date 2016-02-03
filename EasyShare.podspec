@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "EasyShare"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "简单封装分享"
   s.description  = <<-DESC
 					 简单封装分享功能
@@ -14,8 +14,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Wmileo/EasyShare.git", :tag => s.version.to_s }
 
   s.source_files  = "EasyShare/Share/*"
-  s.frameworks   = 'SystemConfiguration'
-  s.libraries = 'z' , 'sqlite3.0' , 'c++'
+  s.frameworks   = 'SystemConfiguration', 'CoreTelephony'
+  s.libraries = 'z' , 'sqlite3.0'
   s.requires_arc = true
 
   s.vendored_frameworks = 'EasyShare/Framework/*.{framework}'
