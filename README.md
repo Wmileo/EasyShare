@@ -4,4 +4,4 @@
 
 注意  需添加对应的URL Schemes
       白名单LSApplicationQueriesSchemes
-      QQ需添加mqq,mqqapi,mqq,mqqopensdkapiV2
+      QQ需添加mqq,mqqapi,mqqopensdkapiV2
