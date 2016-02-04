@@ -23,7 +23,6 @@
     [but addTarget:self action:@selector(share) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:but];
     
-    
     // Do any additional setup after loading the view, typically from a nib.
 }
 

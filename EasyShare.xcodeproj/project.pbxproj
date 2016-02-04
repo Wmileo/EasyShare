@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E64A3031C61F87000079CF2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E64A3021C61F86F00079CF2 /* CoreTelephony.framework */; };
 		7EDAEBD21C605B6F00CC0E02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEBD11C605B6F00CC0E02 /* main.m */; };
 		7EDAEBD51C605B6F00CC0E02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEBD41C605B6F00CC0E02 /* AppDelegate.m */; };
 		7EDAEBD81C605B6F00CC0E02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEBD71C605B6F00CC0E02 /* ViewController.m */; };
@@ -41,6 +42,10 @@
 		15DE8B05E9807AE4C5F90A08 /* Pods-EasyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.debug.xcconfig"; sourceTree = "<group>"; };
 		4A3DAC79C7C5D25E5A625795 /* libPods-EasyShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FB2070802754E98E5DF5DF /* Pods-EasyShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.release.xcconfig"; sourceTree = "<group>"; };
+		7E64A3021C61F86F00079CF2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		7E64A3041C61FC0F00079CF2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		7E64A3061C61FC2600079CF2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		7E64A3081C61FC3100079CF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		7EDAEBCD1C605B6F00CC0E02 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDAEBD11C605B6F00CC0E02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EDAEBD31C605B6F00CC0E02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E64A3031C61F87000079CF2 /* CoreTelephony.framework in Frameworks */,
 				AF15647A8A85069D93EA20F9 /* libPods-EasyShare.a in Frameworks */,
 				7EDAEC051C60815100CC0E02 /* TencentOpenAPI.framework in Frameworks */,
 			);
@@ -184,6 +190,10 @@
 		A14D4356D6A995FAEF46000B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7E64A3081C61FC3100079CF2 /* CoreGraphics.framework */,
+				7E64A3061C61FC2600079CF2 /* SystemConfiguration.framework */,
+				7E64A3041C61FC0F00079CF2 /* Security.framework */,
+				7E64A3021C61F86F00079CF2 /* CoreTelephony.framework */,
 				4A3DAC79C7C5D25E5A625795 /* libPods-EasyShare.a */,
 			);
 			name = Frameworks;
@@ -259,6 +269,7 @@
 				TargetAttributes = {
 					7EDAEBCC1C605B6F00CC0E02 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = LZ6NA3C3G7;
 					};
 					7EDAEBE51C605B6F00CC0E02 = {
 						CreatedOnToolsVersion = 7.2;
@@ -513,6 +524,8 @@
 			baseConfigurationReference = 15DE8B05E9807AE4C5F90A08 /* Pods-EasyShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EasyShare/Framework",
@@ -522,6 +535,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ileo.EasyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -530,6 +544,8 @@
 			baseConfigurationReference = 58FB2070802754E98E5DF5DF /* Pods-EasyShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EasyShare/Framework",
@@ -539,6 +555,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ileo.EasyShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

@@ -35,10 +35,11 @@
 }
 
 -(BOOL)handleOpenURL:(NSURL *)url{
+
     __block BOOL isHandle = NO;
     [self.handles enumerateObjectsUsingBlock:^(id<ShareHandle>  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([obj handleOpenURL:url]) {
-            isHandle = YES;
+        if ([url.absoluteString hasPrefix:[obj handleURLPrefix]]) {
+            isHandle = [obj handleOpenURL:url];
             *stop = YES;
         }
     }];
@@ -71,6 +72,9 @@
 }
 -(NSArray *)handlePlatforms{
     return @[@(Share_WX_Session),@(Share_WX_Timeline)];
+}
+-(NSString *)handleURLPrefix{
+    return @"wx";
 }
 -(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform{
     SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
@@ -114,8 +118,12 @@
 -(BOOL)handleOpenURL:(NSURL *)url{
     return [QQApiInterface handleOpenURL:url delegate:self];
 }
+-(NSString *)handleURLPrefix{
+    return @"QQ";
+}
 -(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform{
-    QQApiURLObject *obj = [[QQApiURLObject alloc] initWithURL:[NSURL URLWithString:model.shareURL] title:model.title description:model.detail previewImageURL:[NSURL URLWithString:model.imageURL] targetContentType:QQApiURLTargetTypeNews];
+    QQApiURLObject *obj = [QQApiURLObject objectWithURL:[NSURL URLWithString:model.shareURL] title:model.title description:model.detail previewImageURL:[NSURL URLWithString:model.imageURL] targetContentType:QQApiURLTargetTypeNews];
+    
     switch (platform) {
         case Share_QQ:
             [QQApiInterface sendReq:[SendMessageToQQReq reqWithContent:obj]];
@@ -143,6 +151,7 @@
         self.IsOnlineResponse(response);
     }
 }
+
 - (void)tencentDidLogin{}
 - (void)tencentDidNotLogin:(BOOL)cancelled{}
 - (void)tencentDidNotNetWork{}

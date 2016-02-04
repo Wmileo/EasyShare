@@ -45,6 +45,7 @@ typedef NS_ENUM(NSInteger, Share_Platform){
 @protocol ShareHandle <NSObject>
 -(BOOL)handleOpenURL:(NSURL *)url;
 -(NSArray *)handlePlatforms;
+-(NSString *)handleURLPrefix;
 -(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform;
 @end
 
