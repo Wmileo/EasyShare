@@ -18,7 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    [[ShareCenter sharedInstance] configHandles:@[[WXHandle handleWithAppID:@"wx179d32fb6c5ed7e6"],[QQHandle handleWithAppID:@"1101986483"]]];
+    [[ShareCenter sharedInstance] configHandlers:@[[WXHandler handleWithAppID:@"wx179d32fb6c5ed7e6"],[QQHandler handleWithAppID:@"1101986483"]]];
 
     return YES;
 }

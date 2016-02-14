@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E0D7EB21C70581C001B4008 /* EasyShare.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 7E0D7EB11C70581C001B4008 /* EasyShare.podspec */; };
 		7E64A3031C61F87000079CF2 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E64A3021C61F86F00079CF2 /* CoreTelephony.framework */; };
+		7E64A3181C633BA100079CF2 /* ShareHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E64A3171C633BA100079CF2 /* ShareHandler.m */; };
+		7E64A31B1C633CD400079CF2 /* ShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E64A31A1C633CD400079CF2 /* ShareModel.m */; };
 		7EDAEBD21C605B6F00CC0E02 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEBD11C605B6F00CC0E02 /* main.m */; };
 		7EDAEBD51C605B6F00CC0E02 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEBD41C605B6F00CC0E02 /* AppDelegate.m */; };
 		7EDAEBD81C605B6F00CC0E02 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEBD71C605B6F00CC0E02 /* ViewController.m */; };
@@ -42,10 +45,15 @@
 		15DE8B05E9807AE4C5F90A08 /* Pods-EasyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.debug.xcconfig"; sourceTree = "<group>"; };
 		4A3DAC79C7C5D25E5A625795 /* libPods-EasyShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FB2070802754E98E5DF5DF /* Pods-EasyShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.release.xcconfig"; sourceTree = "<group>"; };
+		7E0D7EB11C70581C001B4008 /* EasyShare.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EasyShare.podspec; sourceTree = "<group>"; };
 		7E64A3021C61F86F00079CF2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		7E64A3041C61FC0F00079CF2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7E64A3061C61FC2600079CF2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		7E64A3081C61FC3100079CF2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E64A3161C633BA100079CF2 /* ShareHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareHandler.h; sourceTree = "<group>"; };
+		7E64A3171C633BA100079CF2 /* ShareHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareHandler.m; sourceTree = "<group>"; };
+		7E64A3191C633CD400079CF2 /* ShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareModel.h; sourceTree = "<group>"; };
+		7E64A31A1C633CD400079CF2 /* ShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareModel.m; sourceTree = "<group>"; };
 		7EDAEBCD1C605B6F00CC0E02 /* EasyShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDAEBD11C605B6F00CC0E02 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7EDAEBD31C605B6F00CC0E02 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 		7EDAEBC41C605B6F00CC0E02 = {
 			isa = PBXGroup;
 			children = (
+				7E0D7EB11C70581C001B4008 /* EasyShare.podspec */,
 				7EDAEBCF1C605B6F00CC0E02 /* EasyShare */,
 				7EDAEBE91C605B6F00CC0E02 /* EasyShareTests */,
 				7EDAEBF41C605B6F00CC0E02 /* EasyShareUITests */,
@@ -183,6 +192,10 @@
 			children = (
 				7EDAEC0A1C6086D500CC0E02 /* ShareCenter.h */,
 				7EDAEC0B1C6086D500CC0E02 /* ShareCenter.m */,
+				7E64A3161C633BA100079CF2 /* ShareHandler.h */,
+				7E64A3171C633BA100079CF2 /* ShareHandler.m */,
+				7E64A3191C633CD400079CF2 /* ShareModel.h */,
+				7E64A31A1C633CD400079CF2 /* ShareModel.m */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -308,6 +321,7 @@
 			files = (
 				7EDAEBE01C605B6F00CC0E02 /* LaunchScreen.storyboard in Resources */,
 				7EDAEBDD1C605B6F00CC0E02 /* Assets.xcassets in Resources */,
+				7E0D7EB21C70581C001B4008 /* EasyShare.podspec in Resources */,
 				7EDAEBDB1C605B6F00CC0E02 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,8 +395,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E64A31B1C633CD400079CF2 /* ShareModel.m in Sources */,
 				7EDAEC0C1C6086D500CC0E02 /* ShareCenter.m in Sources */,
 				7EDAEBD81C605B6F00CC0E02 /* ViewController.m in Sources */,
+				7E64A3181C633BA100079CF2 /* ShareHandler.m in Sources */,
 				7EDAEBD51C605B6F00CC0E02 /* AppDelegate.m in Sources */,
 				7EDAEBD21C605B6F00CC0E02 /* main.m in Sources */,
 			);
