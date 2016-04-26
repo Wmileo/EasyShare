@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "EasyShare"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "简单封装分享"
   s.description  = <<-DESC
 					 简单封装分享功能
