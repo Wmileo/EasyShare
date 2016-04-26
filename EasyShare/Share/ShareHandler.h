@@ -22,7 +22,7 @@ typedef NS_ENUM(NSInteger, Share_Platform){
 -(BOOL)handleOpenURL:(NSURL *)url;
 -(NSArray *)handlePlatforms;
 -(NSString *)handleURLPrefix;
--(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform;
+-(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform callback:(void (^)(BOOL isSuccess))callback;
 @end
 
 @interface WXHandler : NSObject <WXApiDelegate,ShareHandle>

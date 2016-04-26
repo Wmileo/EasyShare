@@ -20,7 +20,7 @@
 //appdelegate
 -(BOOL)handleOpenURL:(NSURL *)url;
 
-//分享ur新闻
--(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform;
+//分享url新闻
+-(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform callback:(void (^)(BOOL isSuccess))callback;
 
 @end

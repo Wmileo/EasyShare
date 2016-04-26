@@ -9,6 +9,9 @@
 #import "ShareHandler.h"
 #import <TencentOpenAPI/TencentOAuth.h>
 
+@interface WXHandler()
+@property (nonatomic, copy) void (^CallBack)(BOOL isSuccess);
+@end
 @implementation WXHandler
 +(instancetype)handleWithAppID:(NSString *)appID{
     [WXApi registerApp:appID];
@@ -23,7 +26,8 @@
 -(NSString *)handleURLPrefix{
     return @"wx";
 }
--(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform{
+-(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform callback:(void (^)(BOOL))callback{
+    self.CallBack = callback;
     SendMessageToWXReq *req = [[SendMessageToWXReq alloc] init];
     WXMediaMessage *mes = [WXMediaMessage message];
     WXWebpageObject *web = [WXWebpageObject object];
@@ -44,6 +48,9 @@
     }
 }
 -(void)onResp:(BaseResp *)resp{
+    if (self.CallBack) {
+        self.CallBack(resp.errCode == WXSuccess);
+    }
     if (self.OnResp) {
         self.OnResp(resp);
     }
@@ -52,6 +59,7 @@
 
 @interface QQHandler()<TencentSessionDelegate>
 @property (nonatomic, strong) TencentOAuth *oauth;
+@property (nonatomic, copy) void (^CallBack)(BOOL isSuccess);
 @end
 @implementation QQHandler
 +(instancetype)handleWithAppID:(NSString *)appID{
@@ -68,9 +76,9 @@
 -(NSString *)handleURLPrefix{
     return @"QQ";
 }
--(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform{
+-(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform callback:(void (^)(BOOL))callback{
+    self.CallBack = callback;
     QQApiURLObject *obj = [QQApiURLObject objectWithURL:[NSURL URLWithString:model.shareURL] title:model.title description:model.detail previewImageURL:[NSURL URLWithString:model.imageURL] targetContentType:QQApiURLTargetTypeNews];
-    
     switch (platform) {
         case Share_QQ:
             [QQApiInterface sendReq:[SendMessageToQQReq reqWithContent:obj]];
@@ -89,6 +97,9 @@
     }
 }
 -(void)onResp:(QQBaseResp *)resp{
+    if (self.CallBack) {
+        self.CallBack([resp.result isEqualToString:@"0"]);
+    }
     if (self.OnResp) {
         self.OnResp(resp);
     }

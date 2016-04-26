@@ -45,10 +45,10 @@
     return isHandle;
 }
 
--(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform{
+-(void)shareURL:(ShareURLModel *)model withPlatform:(Share_Platform)platform callback:(void (^)(BOOL))callback{
     [self.handlers enumerateObjectsUsingBlock:^(id<ShareHandle>  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         if ([[obj handlePlatforms] containsObject:@(platform)]) {
-            [obj shareURL:model withPlatform:platform];
+            [obj shareURL:model withPlatform:platform callback:callback];
             *stop = YES;
         }
     }];
