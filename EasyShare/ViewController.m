@@ -33,7 +33,7 @@
     model.shareURL = @"http://www.baidu.com";
     model.imageURL = @"https://dn-mdpic.qbox.me/GroupAvatar/GroupAvatarImage_faKUryFMXLoZjqP_1859438527.jpg?imageView2/1/w/48/h/48/q/100";
     
-    [[ShareCenter sharedInstance] shareURL:model withPlatform:Share_QQ callback:^(BOOL isSuccess) {
+    [[ShareCenter sharedInstance] shareURL:model withPlatform:Share_WX_Session callback:^(BOOL isSuccess) {
         if (isSuccess) {
             NSLog(@"成功");
         }else{

@@ -21,7 +21,7 @@
 		7EDAEBF61C605B6F00CC0E02 /* EasyShareUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEBF51C605B6F00CC0E02 /* EasyShareUITests.m */; };
 		7EDAEC051C60815100CC0E02 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EDAEC041C60815100CC0E02 /* TencentOpenAPI.framework */; };
 		7EDAEC0C1C6086D500CC0E02 /* ShareCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EDAEC0B1C6086D500CC0E02 /* ShareCenter.m */; };
-		AF15647A8A85069D93EA20F9 /* libPods-EasyShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A3DAC79C7C5D25E5A625795 /* libPods-EasyShare.a */; };
+		CC61ECD8FF23EE76A6854E69 /* libPods-EasyShare.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA0ED2108D78AF6F86C1BCE3 /* libPods-EasyShare.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,9 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15DE8B05E9807AE4C5F90A08 /* Pods-EasyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.debug.xcconfig"; sourceTree = "<group>"; };
-		4A3DAC79C7C5D25E5A625795 /* libPods-EasyShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		58FB2070802754E98E5DF5DF /* Pods-EasyShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.release.xcconfig"; sourceTree = "<group>"; };
+		18E02BF9B73484A151ACCB7C /* Pods-EasyShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.release.xcconfig"; sourceTree = "<group>"; };
 		7E0D7EB11C70581C001B4008 /* EasyShare.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = EasyShare.podspec; sourceTree = "<group>"; };
 		7E64A3021C61F86F00079CF2 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		7E64A3041C61FC0F00079CF2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -73,6 +71,8 @@
 		7EDAEC041C60815100CC0E02 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
 		7EDAEC0A1C6086D500CC0E02 /* ShareCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareCenter.h; sourceTree = "<group>"; };
 		7EDAEC0B1C6086D500CC0E02 /* ShareCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareCenter.m; sourceTree = "<group>"; };
+		8DD3BABE2BA0E9ECC98A4E5A /* Pods-EasyShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyShare.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare.debug.xcconfig"; sourceTree = "<group>"; };
+		DA0ED2108D78AF6F86C1BCE3 /* libPods-EasyShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasyShare.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E64A3031C61F87000079CF2 /* CoreTelephony.framework in Frameworks */,
-				AF15647A8A85069D93EA20F9 /* libPods-EasyShare.a in Frameworks */,
 				7EDAEC051C60815100CC0E02 /* TencentOpenAPI.framework in Frameworks */,
+				CC61ECD8FF23EE76A6854E69 /* libPods-EasyShare.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,15 +103,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15A8E31461A3600F38A968C5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				15DE8B05E9807AE4C5F90A08 /* Pods-EasyShare.debug.xcconfig */,
-				58FB2070802754E98E5DF5DF /* Pods-EasyShare.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7EDAEBC41C605B6F00CC0E02 = {
 			isa = PBXGroup;
 			children = (
@@ -120,8 +111,8 @@
 				7EDAEBE91C605B6F00CC0E02 /* EasyShareTests */,
 				7EDAEBF41C605B6F00CC0E02 /* EasyShareUITests */,
 				7EDAEBCE1C605B6F00CC0E02 /* Products */,
-				15A8E31461A3600F38A968C5 /* Pods */,
 				A14D4356D6A995FAEF46000B /* Frameworks */,
+				8DC56AB7B98E5CB98E98BF20 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +191,15 @@
 			path = Share;
 			sourceTree = "<group>";
 		};
+		8DC56AB7B98E5CB98E98BF20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8DD3BABE2BA0E9ECC98A4E5A /* Pods-EasyShare.debug.xcconfig */,
+				18E02BF9B73484A151ACCB7C /* Pods-EasyShare.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A14D4356D6A995FAEF46000B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,7 +207,7 @@
 				7E64A3061C61FC2600079CF2 /* SystemConfiguration.framework */,
 				7E64A3041C61FC0F00079CF2 /* Security.framework */,
 				7E64A3021C61F86F00079CF2 /* CoreTelephony.framework */,
-				4A3DAC79C7C5D25E5A625795 /* libPods-EasyShare.a */,
+				DA0ED2108D78AF6F86C1BCE3 /* libPods-EasyShare.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -219,12 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7EDAEBFA1C605B6F00CC0E02 /* Build configuration list for PBXNativeTarget "EasyShare" */;
 			buildPhases = (
-				C6A388D306086A873A0EA96D /* Check Pods Manifest.lock */,
+				3FD2E79DEA26A8C54EADE0E3 /* [CP] Check Pods Manifest.lock */,
 				7EDAEBC91C605B6F00CC0E02 /* Sources */,
 				7EDAEBCA1C605B6F00CC0E02 /* Frameworks */,
 				7EDAEBCB1C605B6F00CC0E02 /* Resources */,
-				98778A3568064A9EF55317F1 /* Embed Pods Frameworks */,
-				F4430DBCF40894446B053052 /* Copy Pods Resources */,
+				B2B50F642D39E05287C81909 /* [CP] Embed Pods Frameworks */,
+				794E49A63A22C2C3661226D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,7 +282,7 @@
 				TargetAttributes = {
 					7EDAEBCC1C605B6F00CC0E02 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = LZ6NA3C3G7;
+						DevelopmentTeam = G464W59869;
 					};
 					7EDAEBE51C605B6F00CC0E02 = {
 						CreatedOnToolsVersion = 7.2;
@@ -343,49 +343,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		98778A3568064A9EF55317F1 /* Embed Pods Frameworks */ = {
+		3FD2E79DEA26A8C54EADE0E3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare-frameworks.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C6A388D306086A873A0EA96D /* Check Pods Manifest.lock */ = {
+		794E49A63A22C2C3661226D5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F4430DBCF40894446B053052 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2B50F642D39E05287C81909 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyShare/Pods-EasyShare-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -537,11 +537,12 @@
 		};
 		7EDAEBFB1C605B6F00CC0E02 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 15DE8B05E9807AE4C5F90A08 /* Pods-EasyShare.debug.xcconfig */;
+			baseConfigurationReference = 8DD3BABE2BA0E9ECC98A4E5A /* Pods-EasyShare.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G464W59869;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EasyShare/Framework",
@@ -557,11 +558,12 @@
 		};
 		7EDAEBFC1C605B6F00CC0E02 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58FB2070802754E98E5DF5DF /* Pods-EasyShare.release.xcconfig */;
+			baseConfigurationReference = 18E02BF9B73484A151ACCB7C /* Pods-EasyShare.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = G464W59869;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/EasyShare/Framework",

@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "WXApi.h"
 #import <TencentOpenAPI/QQApiInterface.h>
 #import "ShareModel.h"

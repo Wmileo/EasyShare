@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "EasyShare"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "简单封装分享"
   s.description  = <<-DESC
 					 简单封装分享功能
@@ -19,6 +19,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.vendored_frameworks = 'EasyShare/Framework/*.{framework}'
-  s.dependency 'iOS-WechatSDK'
+  s.dependency 'DXYWeChatSDK'
 
 end
